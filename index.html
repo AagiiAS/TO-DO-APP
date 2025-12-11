@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO APP</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="to-do-box">
+      <h1>To-Do list</h1>
+
+      <div class="">
+        <input type="text" id="input" placeholder="Add a new task..." />
+        <button id="add">Add</button>
+      </div>
+      <div class="status_container">
+        <button class="status" id="all">All</button>
+        <button class="status" id="active">Active</button>
+        <button class="status" id="completed">Completed</button>
+      </div>
+      <div class="checklist_container" id="checklist_container"></div>
+
+      <div class="completed_text">
+        <p class="task-count" style="display: none">
+          ${} of ${} tasks completed
+        </p>
+        <button id="clear" onclick="clearCompleted()" style="display: none">
+          Clear completed
+        </button>
+      </div>
+
+      <div class="text_below">
+        <p id="noTask">No tasks yet. Add one above!</p>
+        <p>Powered by <span class="span_text">Pinecone academy</span></p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

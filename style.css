@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+}
+body {
+  background-color: #f9fafb;
+}
+
+.to-do-box {
+  background-color: white;
+  margin: 0 auto;
+  width: 377px;
+  height: 299px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  padding: 24px 16px;
+  /* border: 1px blue solid; */
+  gap: 20px;
+}
+
+#input {
+  padding: 8px 16px;
+}
+
+#add {
+  padding: 8px 16px;
+  background-color: #3c82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  /* line-height: 100%; */
+}
+
+.checklist_container {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.checklist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 180px; */
+  gap: 20px;
+  background-color: #f9fafb;
+  width: 345px;
+  height: 62px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.check-text-box {
+  display: flex;
+  gap: 10px;
+}
+
+#delete {
+  background-color: #fef2f2;
+  padding: 6px 12px;
+  width: 67px;
+  height: 30px;
+  color: #ef4444;
+  font-size: 14px;
+  border: none;
+}
+.completed {
+  text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+  border-radius: 6px;
+  width: 20px;
+  height: 20px;
+  accent-color: #0275ff;
+  border: 2px solid #ffffff;
+}
+
+input[type="checkbox"]:checked {
+  outline: 2px solid #015fcc;
+
+  outline-offset: 1px;
+}
+.status_container {
+  width: 345px;
+  margin: 0 auto;
+  display: flex;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+}
+.status {
+  padding: 4px 12px;
+  font-size: 12px;
+  border: none;
+  border-radius: 6px;
+}
+.text_below {
+  display: flex;
+  flex-direction: column;
+  color: #6b7280;
+  font-size: 14px;
+  gap: 40px;
+}
+
+.span_text {
+  color: #3b73ed;
+}
+
+.completed_text {
+  display: flex;
+  gap: 86px;
+}
+
+#clear {
+  border: none;
+  color: #ef4444;
+  font-size: 14px;
+  background-color: none;
+}
+
+.task-count {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+#all:hover {
+  background-color: #3c82f6;
+  cursor: pointer;
+}
+#active:hover {
+  background-color: #3c82f6;
+  cursor: pointer;
+}
+#completed:hover {
+  background-color: #3c82f6;
+  cursor: pointer;
+}
+
+/* #all:active {
+  background-color: #3c82f6;
+}
+#completed:active {
+  background-color: #3c82f6;
+}
+#active:active {
+  background-color: #3c82f6;
+} */
