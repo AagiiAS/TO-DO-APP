@@ -127,18 +127,19 @@ input[type="checkbox"]:checked {
   font-size: 14px;
 }
 
-#all:hover {
+.active_filter {
   background-color: #3c82f6;
-  cursor: pointer;
+  color: white;
+  /* cursor: pointer; */
 }
-#active:hover {
+/* #active:hover {
   background-color: #3c82f6;
   cursor: pointer;
 }
 #completed:hover {
   background-color: #3c82f6;
   cursor: pointer;
-}
+} */
 
 /* #all:active {
   background-color: #3c82f6;

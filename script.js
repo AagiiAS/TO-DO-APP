@@ -114,7 +114,26 @@ const checkTask = () => {
   console.log(completed_arr);
   renderTasks(completed_arr);
 };
+const updateBtn = (currentFilter) => {
+  // allStatus.classList.remove("active-filter");
+  // activeStatus.classList.remove("active-filter");
+  // completedStatus.classList.remove("active-filter");
 
+  const activeBtn = document.getElementById(`${currentFilter}`);
+  if (currentFilter === "all") {
+    allStatus.classList.add("active_filter");
+    completedStatus.classList.remove("active_filter");
+    activeStatus.classList.remove("active_filter");
+  } else if (currentFilter === "completed") {
+    completedStatus.classList.add("active_filter");
+    allStatus.classList.remove("active_filter");
+    activeStatus.classList.remove("active_filter");
+  } else if (currentFilter === "active") {
+    activeStatus.classList.add("active_filter");
+    allStatus.classList.remove("active_filter");
+    completedStatus.classList.remove("active_filter");
+  }
+};
 const filterTask = (currentFilter) => {
   let filteredTask = [];
 
@@ -129,7 +148,7 @@ const filterTask = (currentFilter) => {
   if (currentFilter === "completed") {
     filteredTask = tasks.filter((task) => task.isComplete);
   }
-
+  updateBtn(currentFilter);
   renderTasks(filteredTask);
 };
 const countTask = () => {
@@ -144,6 +163,7 @@ const countTask = () => {
     taskCount.style.display = "none";
   }
 };
+
 allStatus.onclick = () => filterTask("all");
 activeStatus.onclick = () => filterTask("active");
 completedStatus.onclick = () => filterTask("completed");
